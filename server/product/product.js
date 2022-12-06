@@ -7,12 +7,16 @@ mongoose.Promise = global.Promise;
 // TODO: Complete the pokemonSchema below.
 var productSchema=mongoose.Schema({
     User:{type:String,required:true},
-    Phonenumber:{type:Number,unique:true,required:true},
+    Phonenumber:{type:Number,required:true},
     Product:{type:String,unique:true,required:true},
-    Category:[String],
+    Category:{type:String,required:true},
+    Description:[String],
     ImageUrl:{type:String},
+    Price:{type:String,required:true},
+    
 
 })
+
  
 // TODO: Register the pokemonSchema with Mongoose as the 'Pokemon' collection.
 var Product=mongoose.model("product",productSchema);
