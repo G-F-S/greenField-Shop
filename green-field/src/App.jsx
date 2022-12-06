@@ -9,6 +9,8 @@ import axios from "axios";
 import Vehicle from './components/Vehicle.jsx'
 import Home from './components/home.jsx';
 import {Routes,Route} from "react-router-dom"
+import Login from './components/Login.jsx'
+
 function App() {
 
 const [data,setData]=useState([])
@@ -44,6 +46,7 @@ console.log(vehicle);
 <Route path='/vehicle' element={<Vehicle vehicle={vehicle}/>}/>
 <Route path='/realEstate' element={<RealEstate />}/>
 <Route path='/fot' element={<Footer/>}/>
+<Route path='/login' element={<Login/>}/>
 
   </Route>
 </Routes>

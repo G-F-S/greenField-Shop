@@ -87,7 +87,7 @@ const NavBar = () => {
                    </div>
                    <div className="login_menu">
                       <ul>
-                         <li><a href="#">
+                         <li><a href="/login">
                             <i className="fa fa-shopping-cart" aria-hidden="true"></i>
                             <span className="padding_10">Cart</span></a>
                          </li>
