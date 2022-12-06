@@ -34,16 +34,17 @@ console.log(vehicle);
 
   return (
     <div className="App">
-      
-   
-   <NavBar/>
+    
+   <NavBar/>  
 <Routes>
   <Route>
+
 <Route path='/phones' element={<Phones phones={phones} />}/>
 <Route path='/' element={<Home/>}/>
 <Route path='/vehicle' element={<Vehicle vehicle={vehicle}/>}/>
 <Route path='/realEstate' element={<RealEstate />}/>
 <Route path='/fot' element={<Footer/>}/>
+
   </Route>
 </Routes>
     < Footer/>
