@@ -6,6 +6,8 @@ var productController = require('./productController');
 productRouter.route('/prod')
 .get(productController.retrieve)
 .post(productController.createOne)
+productRouter.route('/user/login').post(productController.login)
+productRouter.route('/user/signup').post(productController.signup)
 
 productRouter.route('/:id')
 .get(productController.retrieveOne)

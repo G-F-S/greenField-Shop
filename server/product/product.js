@@ -17,9 +17,16 @@ var productSchema=mongoose.Schema({
 
 })
 
+
+ var userSchema=mongoose.Schema({
+    User:{type:String,required:true},
+    password:{type:String,required:true}
+
+ })
+
  
 // TODO: Register the pokemonSchema with Mongoose as the 'Pokemon' collection.
 var Product=mongoose.model("product",productSchema);
- 
+ var Users=mongoose.model('User',userSchema)
 
-module.exports = Product;
+module.exports = {Product,Users};
